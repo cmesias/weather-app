@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App by Carl Mesias</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Weather App</h1>
+    <div class="card">
+        <!-- Search Query Box -->
+        <form>
+            <div class="search-box">
+                <!-- Enter city name input-->
+                <input
+                id="city-search"
+                name="city"
+                type="text"
+                placeholder="enter a city name" 
+                required>
+                <!-- Search button -->
+                <button type="button" onclick="getWeather()">
+                    <img src="search.png">
+                </button>
+            </div>
+        </form>
+
+        <!-- Dispalys current temperature and city -->
+        <div class="display">
+            <h2 class="temperature">90 F</h1>
+            <h2 class="city">City</h1>
+        </div>
+    </div>
+    <p>Author: Carl Mesias</p>
+
+</body>
+</html>

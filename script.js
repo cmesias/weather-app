@@ -4,16 +4,16 @@
 function getWeather() {
 
     // Your API Key, Sign up and get your API key
-    let apiKey = '0000000000000000000000';
+    let apiKey = '00000000000000000000000000000';
 
     // Get city by ID name from index.html file
-    let city = document.getElementById('city-search').value;
+    let city = document.getElementById('search-value').value;
     
     let apiUrl = 'http://api.weatherapi.com/v1/current.json?key='
-    apiUrl += apiKey;
-    apiUrl += ' &q=';
-    apiUrl += city;
-    apiUrl += '&aqi=no';
+    apiUrl += apiKey
+    apiUrl += ' &q='
+    apiUrl += city
+    apiUrl += '&aqi=no'
 
     console.log(apiUrl);
 
@@ -28,7 +28,7 @@ function getWeather() {
         .then(data => {
             console.log(data);
 
-            document.querySelector(".temp").innerHTML = data.current.temp_f + "F";
+            document.querySelector(".temperature").innerHTML = Math.floor(data.current.temp_f) + "F";
             document.querySelector(".city").innerHTML = data.location.name;
         })
         .catch(error => {

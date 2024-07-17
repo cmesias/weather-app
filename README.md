@@ -1,5 +1,5 @@
 # weather-app
-A simple weather app that gets the current temperature (F) and city name.
+A simple weather app that gets the current temperature (C), city name and humidty.
 
 Live Website: https://cmesias.github.io/weather-app/
 

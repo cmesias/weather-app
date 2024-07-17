@@ -11,7 +11,7 @@ function getWeather() {
     
     let apiUrl = 'http://api.weatherapi.com/v1/current.json?key='
     apiUrl += apiKey
-    apiUrl += ' &q='
+    apiUrl += '&q='
     apiUrl += city
     apiUrl += '&aqi=no'
 
@@ -28,8 +28,9 @@ function getWeather() {
         .then(data => {
             console.log(data);
 
-            document.querySelector(".temperature").innerHTML = Math.floor(data.current.temp_f) + "F";
+            document.querySelector(".temperature").innerHTML = Math.floor(data.current.temp_c) + " C";
             document.querySelector(".city").innerHTML = data.location.name;
+            document.querySelector(".humidity").innerHTML = "Humidity: " + Math.floor(data.current.humidity);
         })
         .catch(error => {
             console.error('Error:', error);

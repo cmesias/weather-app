@@ -4,4 +4,5 @@ A simple weather app that gets the current temperature (C), city name and humidt
 Live Website: https://cmesias.github.io/weather-app/
 
 # Screenshot
-![Expected_Output](https://github.com/user-attachments/assets/71d12837-a8c6-4b0d-9eed-84eb58cbd8fd)
+![Expected_Output](https://github.com/user-attachments/assets/42fba0d8-bc9f-4948-90bd-cdac33dd0cd1)
+
